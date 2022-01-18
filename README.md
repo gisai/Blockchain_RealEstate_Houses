@@ -27,7 +27,7 @@ truffle compile
 6. Migrate the Truffle code 
 
 ```Truffle
-truffle migrate --reset 
+truffle migrate 
 ```
 7. Run the DApp using
 
