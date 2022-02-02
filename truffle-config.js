@@ -11,15 +11,10 @@ module.exports = {
 			provider: function() {
 			  return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161");
 			}
-		},
-		advanced: {
-    
-    		 gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
-    
-    	}
-	},	
+		}
+	},
 	
-	// Configure your compilers
+	  // Configure your compilers
 	compilers: {
 		solc: {
 		  version: "0.8.6",    
@@ -32,3 +27,4 @@ module.exports = {
 		enabled: false
 	}
 };
+
