@@ -2,7 +2,7 @@
 
 A dapp that allows the sale and purchase of second-hand homes with Blockchain technology.
 
-![image](https://user-images.githubusercontent.com/97789606/149758414-b22c6271-a1ca-44da-980c-04b464b793f5.png)
+![image](https://user-images.githubusercontent.com/97789606/153621497-59edfb46-6be2-4e66-9f94-4e2693851e46.png)
 
 
 
