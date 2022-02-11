@@ -8,10 +8,10 @@ contract Owners {
         string seller; //Nombre Dueño
         string state;  //estado
         string street; //Direccion de la propiedad
-        uint precio;  
+        uint256 precio;  
         uint256 rooms; 
         bool isAvailable; //Marcar si esta vendida o no 
-        address payable vendedor;
+        address payable owner;
     }
 
     event HouseEvent (
@@ -19,10 +19,10 @@ contract Owners {
         string seller,
         string state,
         string street,
-        uint precio, 
+        uint256 precio, 
         uint256 rooms,
         bool isAvailable,
-        address payable vendedor
+        address payable owner
     );
 
     event HouseBuy (
@@ -30,10 +30,10 @@ contract Owners {
         string seller,
         string state,
         string street,
-        uint precio, 
+        uint256 precio, 
         uint256 rooms,
         bool isAvailable,
-        address payable vendedor
+        address payable owner
     );
 
     
@@ -43,27 +43,22 @@ contract Owners {
 
   
     //Comprar casa
-    function buy(uint256 _houseId) payable public{         
+    function buy(uint256 _houseId) public{         
       require(_houseId >= 0 && _houseId < total); 
-      House memory _house = houses[_houseId]; 
-      address payable _vendedor = _house.vendedor; 
+      House memory _house = houses[_houseId];  
       
-      //require(msg.value >= _house.precio);
+    
        //La casa se puede comprar
        require(houses[_houseId].isAvailable == true);
 
        //Registramos la compra    
        houses[_houseId].isAvailable = false;
-      
-      //_vendedor.transfer(_house.precio);
       emit HouseBuy(total, _house.seller, _house.state, _house.street , _house.precio, _house.rooms, false, payable(msg.sender)); 
     }
 
 
     //Agregar nueva casa
-    function addNewHouse(string memory _seller, string memory _state, string memory _street) public {
-      uint _precio=200;
-      uint256 _rooms=3;
+    function addNewHouse(string memory _seller, string memory _state, string memory _street, uint256 _precio, uint256 _rooms) public {
       total++;
       houses[total]= House(total, _seller, _state, _street , _precio, _rooms, true, payable(msg.sender));
       emit HouseEvent(total, _seller, _state, _street , _precio, _rooms, true, payable(msg.sender));

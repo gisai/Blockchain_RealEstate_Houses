@@ -84,7 +84,7 @@ App = {
 		 		 <h4 class="house-seller" style = "font-family:helvética;">Vendedor: ${seller}</h4>
 		 		 <h4 class="house-state" style = "font-family:helvética;">Estado: ${state}</h4>
 		 		 <h4 class="house-rooms" style = "font-family:helvética;">Habitaciones: ${rooms}</h4>
-        		  <h4 class="house-precio" style = "font-family:helvética;">Precio: ${precio} €</h4>
+        		  <h4 class="house-precio" style = "font-family:helvética;">Precio: ${precio} Eth</h4>
 		 	 </div>
 		  </div>
 		  </div>
@@ -96,9 +96,9 @@ App = {
 	},
 
 	//Envia los datos del formulario y crea una nueva casa
-	createHouse: async (seller, state, street) => {
+	createHouse: async (seller, state, street,precio, rooms) => {
 	  try {
-		const result = await App.owners.addNewHouse(seller, state, street, {
+		const result = await App.owners.addNewHouse(seller, state, street, precio, rooms,{
 		  from: App.account,
 		});
 		console.log(result.logs[0].args);

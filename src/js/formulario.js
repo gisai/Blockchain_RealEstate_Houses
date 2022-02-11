@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const seller = houseForm["seller"].value;
     const state = houseForm["state"].value;
     const street = houseForm["street"].value;
-    //const precio = houseForm["precio"].value;
-    //const rooms = houseForm["rooms"].value;
+    const precio = houseForm["price"].value;
+    const rooms = houseForm["rooms"].value;
 
-    App.createHouse(seller, state, street);
+    App.createHouse(seller, state, street, precio, rooms);
   });
 
   const housesList = document.querySelector("#housesList");

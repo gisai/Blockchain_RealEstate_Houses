@@ -1,0 +1,89 @@
+[
+	{
+			"houseId": 1,		
+			"seller": "Carlota Martinez Ruiz",
+			"state": "Buen estado",
+			"street": "Arturo Soria, 3",
+			"precio": 5000000,
+			"rooms": 5,
+			"comprador":"0x0000000000000000000000000000000000000000",
+			"vendedor":"0x02a72CA7EdcA56E17b6C1Ca7765bb66af62235dF",
+			"isAvailable":true,
+			"image": "images/house1.jpg"
+		},
+		{
+		
+			"houseId": 2,		
+			"seller": "Juan Yepes Jimenez",
+			"state": "Obra nueva",
+			"street": "Plaza Monte Negro, 67",
+			"precio": 220000,
+			"rooms": 3,
+			"comprador":"0x0000000000000000000000000000000000000000",
+			"vendedor":"0x02a72CA7EdcA56E17b6C1Ca7765bb66af62235dF",
+			"isAvailable":true,
+			"image": "images/house2.jpg"
+		},
+		{
+		
+			"houseId": 3,	
+			"seller": "Miriam Tinez Mendez",
+			"state": "Obra nueva",
+			"street": "Calle Alonso Martinez, 9",
+			"precio": 245000,
+			"rooms": 4,
+			"comprador":"0x0000000000000000000000000000000000000000",
+			"vendedor":"0x02a72CA7EdcA56E17b6C1Ca7765bb66af62235dF",
+			"isAvailable":true,
+			"image": "images/house3.jpg"
+		},
+		{
+			"houseId": 4,	
+			"seller": "Pedro Bernal Mit",
+			"state": "Buen estado",
+			"street": "Avenida Mortadelo, 7",
+			"precio": 780000,
+			"rooms": 6,
+			"comprador":"0x0000000000000000000000000000000000000000",
+			"vendedor":"0x02a72CA7EdcA56E17b6C1Ca7765bb66af62235dF",
+			"isAvailable":true,
+			"image": "images/house4.jpg"	
+		},
+		{
+			"houseId": 5,		
+			"seller": "David Hernan Nines",
+			"state": "Obra nueva",
+			"street": "Plaza Cervantes, 45",
+			"precio": 310000,
+			"rooms": 4,
+			"comprador":"0x0000000000000000000000000000000000000000",
+			"vendedor":"0x02a72CA7EdcA56E17b6C1Ca7765bb66af62235dF",
+			"isAvailable":true,
+			"image": "images/house5.jpg"
+		},
+		{
+			"houseId": 6,		
+			"seller": "Macarena Garcia Ilsu",
+			"state": "Obra nueva",
+			"street": "Avenida Guadalajara, 2",
+			"precio": 335000,
+			"rooms": 5,
+			"comprador":"0x0000000000000000000000000000000000000000",
+			"vendedor":"0x02a72CA7EdcA56E17b6C1Ca7765bb66af62235dF",
+			"isAvailable":true,
+			"image": "images/house6.jpg"
+		},
+		{
+			"houseId": 7,		
+			"seller": "Roberto Ermua Hende",
+			"state": "Reformar",
+			"street": "Calle Fronton, 32",
+			"precio": 190000,
+			"rooms": 2,
+			"comprador":"0x0000000000000000000000000000000000000000",
+			"vendedor":"0x02a72CA7EdcA56E17b6C1Ca7765bb66af62235dF",
+			"isAvailable":true,
+			"image": "images/house7.jpg"
+		}
+
+]
