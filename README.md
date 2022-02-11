@@ -17,7 +17,7 @@ npm install
 ```
 3. Install Ganache
 
-4. Inatall Metamask
+4. Install Metamask
 
 5. Complie the Truffle code
 
